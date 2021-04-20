@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.autocomplete_container {
+  position: relative;
+  width: 300px;
+  margin: 60px auto;
+}
+
+.autocomplete_input {
+  width: 300px;
+  height: 35px;
+  font-size: 14px;
+}
+
+.dropdown_container {
+  min-height: 50px;
+  max-height: 200px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 300px;
+  overflow: auto;
+  text-align: left;
+}
+
+.no_results_text {
+  padding: 20px;
+}
+
+.active_item {
+  background: #dcf7ff;
+}
+
+.item {
+  padding: 8px 20px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.loading_text {
+  text-align: center;
+}

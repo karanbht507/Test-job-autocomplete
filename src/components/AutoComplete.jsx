@@ -7,6 +7,7 @@ export default function AutoComplete() {
   const [searchValue, setSearchValue] = useState('');
   const [isDropdownOpen, toggleDropdown] = useState(false);
   const wrapperRef = useRef(null);
+
   const { data, isLoading, isError } = useQuery(
     ['characters', searchValue],
     () => getCharacters(searchValue),

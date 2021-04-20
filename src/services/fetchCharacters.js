@@ -5,7 +5,7 @@ export async function getCharacters(payload) {
   const characters = await axios({
     method: 'get',
     url: `character/?name=${payload}`,
-    baseURL: "https://rickandmortyapi.com/api/",
+    baseURL: `${process.env.REACT_APP_API_URL}`,
   });
   return characters;
 }
